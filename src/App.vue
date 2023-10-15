@@ -2,7 +2,7 @@
   <BaseContainer title="Vuex">
     <TheCounter />
     <FavouriteNumber />
-    <Button @click="counterIncrement">Add by 10</Button>
+    <Button @click="counterIncrement">Add by 2</Button>
     <ChangeCounter />
   </BaseContainer>
 </template>
@@ -22,7 +22,8 @@ export default {
   },
   methods: {
     counterIncrement() {
-      this.$store.commit('increment');
+      this.$store.dispatch('increment');
+      console.log('App.vue methods');
     },
   },
 };

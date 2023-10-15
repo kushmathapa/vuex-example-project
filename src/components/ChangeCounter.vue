@@ -1,12 +1,12 @@
 <template>
-  <button @click="incrementCounter">Increment by 5</button>
+  <button @click="incrementCounter">Increment by 7</button>
 </template>
 
 <script>
 export default {
   methods: {
     incrementCounter() {
-      this.$store.commit('increaseByValue', { value: 7 });
+      this.$store.dispatch('increaseByValue', { value: 7 });
     },
   },
 };
