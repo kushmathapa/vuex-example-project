@@ -19,7 +19,7 @@ export default {
   },
   methods: {
     counterIncrement() {
-      this.$store.state.counter = this.$store.state.counter + 10;
+      this.$store.commit('increment');
     },
   },
 };
