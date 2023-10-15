@@ -1,16 +1,23 @@
 <template>
-  <base-container title="Vuex">
-    <h3>{{ $store.state.counter }}</h3>
-    <button>Add 1</button></base-container
+  <BaseContainer title="Vuex">
+    <TheCounter />
+    <button @click="counterIncrement">Add 1</button></BaseContainer
   >
 </template>
 
 <script>
 import BaseContainer from './components/BaseContainer.vue';
+import TheCounter from './components/TheCounter.vue';
 
 export default {
   components: {
     BaseContainer,
+    TheCounter,
+  },
+  methods: {
+    counterIncrement() {
+      this.$store.state.counter++;
+    },
   },
 };
 </script>
