@@ -1,7 +1,7 @@
 <template>
   <BaseContainer title="Vuex">
     <TheCounter />
-    <button @click="counterIncrement">Add 1</button>
+    <button @click="counterIncrement">Add by 10</button>
     <ChangeCounter />
   </BaseContainer>
 </template>
